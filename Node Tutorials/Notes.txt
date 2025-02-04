@@ -1,0 +1,33 @@
+Node.js as a File Server
+var fs = require('fs)'
+
+//Read Files on your compouter
+fs.readFile() 
+//File System module has methods for creating new files:
+    - fs.appendFile()
+    - fs.open()
+    - fs.writeFile()
+//Update files
+fs.unlink('myfile.txt), function(err){
+    if (err) throw err;
+}
+//Rename Files
+fs.rename('myfile.txt', 'mynewfile.txt', function(err){
+    if(err) throw err;
+})
+
+//Built-in URL module
+val url = require('url')
+var q =  url.parse(adr, true)
+q.host
+q.pathname
+q.search
+
+var qdata = q.query
+    qdata.month or qdata.day
+
+
+//Node.js File Server
+Opens the requested file and returns the content or throw 404 error.
+//Code in index.js
+
